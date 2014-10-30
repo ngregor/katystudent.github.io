@@ -19,10 +19,10 @@ Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fa
  ![cat gif]
 (http://i.imgur.com/v1gUYem.gif)
  
-<pre><code>
+'''
 #header h1 a { 
 	display: block; 
 	width: 300px; 
 	height: 80px; 
 }
-</code></pre>
+'''
