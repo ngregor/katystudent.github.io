@@ -1,0 +1,147 @@
+* {
+	box-sizing: border-box; /* check prefixes, this will make the border be included in the width of an element */
+}
+
+
+body {
+	font-family: 'Open Sans', serif;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #333;
+	font-size: 16px;
+}
+
+p {
+	margin-bottom: 1.3em;
+	max-width: 35em;
+}
+
+h1, h2, h3, h4 {
+	margin: 1.414em 0 0.5em;
+	font-weight: inherit;
+	line-height: 1.2;
+}
+
+h1 {
+	margin-top: 0;
+	font-size: 2.074em;
+}
+
+h2 {font-size: 1.728em;}
+
+h3 {font-size: 1.44em;}
+
+h4 {font-size: 1.2em;}
+
+small, .font_small {font-size: 0.833em;}
+
+a {
+	color: red;
+}
+a:hover {
+	text-decoration: none;
+	color: orange;
+}
+
+/* Layout */
+.container {
+	max-width: 1000px; /* max-width will scale to the browser, while just `width` will always be the value */
+	margin-left: auto; /* or margin: 0 auto; -- both will center a block element on a page or in a container */
+	margin-right: auto;
+}
+@media (max-width: 1050px){
+	.container {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+}
+.site-header {
+	padding: 2em 0;
+}
+.hero-img {
+	max-width: 100%; /* max-width will scale to the browser or container */
+}
+.site-title { 
+	font-weight: bold;
+	font-size: 1.25em;
+	color: tomato;
+	text-decoration: none;
+}
+.site-title:hover {
+	background: tomato;
+	color: white;
+}
+
+
+
+.site-footer {
+	margin-top: 3em;
+	background: black;
+	color: white;
+	padding: 2em 0;
+}
+
+/* Navigation */
+.header-nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.header-nav li {
+	margin-bottom: 0.25em;
+}
+@media (min-width: 630px){
+	.header-nav li {
+		display: inline-block;
+	}
+	.navbar {
+		float: right;
+	}
+	.site-title {
+		float: left;
+	}
+	.nav-link {
+		border-radius: 1em;
+	}
+}
+.nav-link {
+	background: #ddd;
+	padding: 0.25em 0.75em;
+	text-decoration: none;
+	color: black;
+	margin: 0 0.25em;
+	
+	display: block;
+}
+.nav-link:hover {
+	background: lightblue;
+}
+
+/* Columns */
+
+
+@media (min-width: 630px){
+	.content-columns {
+		text-align: center;
+	}
+	.col {
+		float: left;
+		width: 33.33%;
+	}
+}
+
+
+/* Utilities */
+
+.cf:before,
+.cf:after {
+	content: " ";
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+.cf {
+	*zoom: 1;
+}
