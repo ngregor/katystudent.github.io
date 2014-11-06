@@ -1,9 +1,9 @@
 # Site settings
-title: Katy's Website
-email: kdecorah@albany.edu
-description: Katy is a front-end developer from New York.
-url: katystudent.github.io
-github_username: katystudent
+title: Nicholle Gregor
+email: ngregor@albany.edu
+description: Nicholle is a student from New York.
+url: ngregor.github.io
+github_username: ngregor
 
 # Build settings
 markdown: kramdown
